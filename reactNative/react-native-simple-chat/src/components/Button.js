@@ -19,10 +19,10 @@ const Title = styled.Text`
     line-height: 30px;
     font-size: 16px;
     color: ${({theme, isFilled}) =>
-        isFilled ? theme.buttonTitle : theme.buttonUnfilledTitle};
+        isFilled ? 'gray' : 'blue'};
 `;
 
-const Button = ({containerStyle, title, onPress, isFilled}) => {
+const Button = ({containerStyle, disabled,title, onPress, isFilled}) => {
     return (
         <Container
             style={containerStyle}
